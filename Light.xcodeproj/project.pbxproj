@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79A0FB401A350CFC00FE488A /* lightSwitch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79A0FB3F1A350CFC00FE488A /* lightSwitch.wav */; };
 		79F6584C1A33637000124116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6584B1A33637000124116 /* AppDelegate.swift */; };
 		79F6584E1A33637000124116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6584D1A33637000124116 /* ViewController.swift */; };
 		79F658511A33637000124116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F6584F1A33637000124116 /* Main.storyboard */; };
 		79F658531A33637000124116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F658521A33637000124116 /* Images.xcassets */; };
 		79F658561A33637000124116 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F658541A33637000124116 /* LaunchScreen.xib */; };
 		79F658621A33637000124116 /* LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F658611A33637000124116 /* LightTests.swift */; };
+		79F6586C1A33638B00124116 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6586B1A33638B00124116 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79A0FB3F1A350CFC00FE488A /* lightSwitch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lightSwitch.wav; sourceTree = "<group>"; };
 		79F658461A33637000124116 /* Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Light.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F6584A1A33637000124116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F6584B1A33637000124116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		79F6585B1A33637000124116 /* LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F658601A33637000124116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F658611A33637000124116 /* LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTests.swift; sourceTree = "<group>"; };
+		79F6586B1A33638B00124116 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				79F6584B1A33637000124116 /* AppDelegate.swift */,
 				79F6584D1A33637000124116 /* ViewController.swift */,
+				79F6586B1A33638B00124116 /* View.swift */,
 				79F6584F1A33637000124116 /* Main.storyboard */,
 				79F658521A33637000124116 /* Images.xcassets */,
 				79F658541A33637000124116 /* LaunchScreen.xib */,
@@ -90,6 +95,7 @@
 		79F658491A33637000124116 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79A0FB3F1A350CFC00FE488A /* lightSwitch.wav */,
 				79F6584A1A33637000124116 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F658511A33637000124116 /* Main.storyboard in Resources */,
+				79A0FB401A350CFC00FE488A /* lightSwitch.wav in Resources */,
 				79F658561A33637000124116 /* LaunchScreen.xib in Resources */,
 				79F658531A33637000124116 /* Images.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				79F6584E1A33637000124116 /* ViewController.swift in Sources */,
 				79F6584C1A33637000124116 /* AppDelegate.swift in Sources */,
+				79F6586C1A33638B00124116 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				79F658671A33637000124116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79F658681A33637000124116 /* Build configuration list for PBXNativeTarget "LightTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				79F6586A1A33637000124116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
