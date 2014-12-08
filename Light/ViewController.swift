@@ -12,11 +12,12 @@ import AudioToolbox;
 
 class ViewController: UIViewController {
 	var sid: SystemSoundID = 0;
+
 	
 	//create the view containers
 	let container: UIView = UIView();
-	let viewImageOff = UIImageView(frame: CGRectMake(0, 0, 375, 500));
-	let viewImageOn = UIImageView(frame: CGRectMake(0, 0, 375, 500));
+	let viewImageOff = UIImageView();
+	let viewImageOn = UIImageView();
 	
 	//create the images
 	let imageLightOff: UIImage? = UIImage(named: "imageLightOff.png");
@@ -59,9 +60,16 @@ class ViewController: UIViewController {
 	override func loadView() {
 		view = View(viewController: self);
 		
+		//screen size
+		let sizeRect = UIScreen.mainScreen().applicationFrame;
+		let w = sizeRect.size.width;
+		
 		// set container frame and add to the screen
-		container.frame = CGRect(x: 0, y: 0, width: 375, height: 500)
+		container.frame = CGRect(x: 0, y: 0, width: w, height: w*1.3)
 		view.addSubview(container)
+		
+		viewImageOff.frame = CGRectMake(0, 0, w, w*1.3);
+		viewImageOn.frame = CGRectMake(0, 0, w, w*1.3);
 		
 		// LIGHT OFF: set view with image
 		viewImageOff.image = imageLightOff;

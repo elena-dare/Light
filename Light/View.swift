@@ -17,6 +17,7 @@ class View: UIView {
 		super.init(frame: CGRectZero);
 		backgroundColor = UIColor.whiteColor();
 		
+		//screen size
 		let sizeRect = UIScreen.mainScreen().applicationFrame;
 		let w = sizeRect.size.width;
 		let h = sizeRect.size.height;
