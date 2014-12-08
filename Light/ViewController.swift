@@ -63,13 +63,14 @@ class ViewController: UIViewController {
 		//screen size
 		let sizeRect = UIScreen.mainScreen().applicationFrame;
 		let w = sizeRect.size.width;
+		let h = sizeRect.size.height;
 		
 		// set container frame and add to the screen
-		container.frame = CGRect(x: 0, y: 0, width: w, height: w*1.3)
+		container.frame = CGRect(x: 0, y: 0, width: w, height: h*0.74)
 		view.addSubview(container)
 		
-		viewImageOff.frame = CGRectMake(0, 0, w, w*1.3);
-		viewImageOn.frame = CGRectMake(0, 0, w, w*1.3);
+		viewImageOff.frame = CGRectMake(0, 0, w, h*0.74);
+		viewImageOn.frame = CGRectMake(0, 0, w, h*0.74);
 		
 		// LIGHT OFF: set view with image
 		viewImageOff.image = imageLightOff;
